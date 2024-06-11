@@ -548,7 +548,7 @@ section .title::after{
 
 /* footer section styling */
 footer{
-    background: #111;
+    background:black;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
@@ -698,3 +698,30 @@ footer span a:hover{
     width: 150px;
     height: 150px;
 }
+/* Define the keyframes for the scrolling animation */
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Apply the animation to the scroll-text class */
+.scroll-text {
+    display: inline-block;
+    /* Ensure the text is displayed in one line */
+    white-space: nowrap;
+    /* Prevent text from wrapping to the next line */
+    animation: scrollText 30s linear infinite;
+    /* Apply the scrolling animation */
+    font-size: 2em;
+    /* Adjust the font size as needed */
+    color: white;
+    /* Set the text color */
+}
+
+/* Container styling to hide the overflow */
+
